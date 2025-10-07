@@ -15,5 +15,6 @@ public class Encapsulation {
         p.setName("Jaya Ananth");
         System.out.println("Name: " + p.getName());
         System.out.println("encapsulation done");
+        System.out.println("encapsulation done1");
     }
 }
