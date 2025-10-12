@@ -20,7 +20,6 @@ class Dog extends Animal {
         super();
         System.out.println("Dog constructor called");
     }
-
     void displayNames() {
         System.out.println("Parent name: " + super.name);
         System.out.println("Child name: " + name);
