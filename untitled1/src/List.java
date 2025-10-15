@@ -13,7 +13,7 @@ public class ListExample {
 
         System.out.println("First fruit: " + fruits.get(0));
 
-        fruits.set(1, "Blueberry"); // Replace Banana with Blueberry
+        fruits.set(1, "Blueberry");
         System.out.println("After modification: " + fruits);
 
         fruits.remove("Cherry");
