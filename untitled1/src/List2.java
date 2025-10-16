@@ -12,7 +12,7 @@ public class CricketPlayersList {
 
         System.out.println("Cricket Players List: " + players);
 
-        players.add(2, "KL Rahul");
+        players.add(2, "Kannur Lokesk Rahul");
         System.out.println("After adding KL Rahul: " + players);
 
         players.remove("Yuvraj Singh");
