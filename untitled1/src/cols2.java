@@ -11,8 +11,7 @@ class Student {
         this.grade = grade;
     }
 
-    public String toString() {
-        return "ID: " + id + ", Name: " + name + ", Grade: " + grade;
+    public String toString() return "ID: " + id + ", Name: " + name + ", Grade: " + grade;
     }
 }
 
@@ -22,11 +21,11 @@ public class StudentListExample {
         students.add(new Student(101, "Alice", 88.5));
         students.add(new Student(102, "Bob", 92.3));
         students.add(new Student(103, "Charlie", 79.4));
-
         System.out.println("Student List:");
         for (Student s : students) {
             System.out.println(s);
         }
+
         students.add(new Student(104, "Diana", 85.0));
 
         students.remove(1);
