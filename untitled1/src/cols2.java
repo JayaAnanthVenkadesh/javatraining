@@ -19,7 +19,6 @@ class Student {
 public class StudentListExample {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-
         students.add(new Student(101, "Alice", 88.5));
         students.add(new Student(102, "Bob", 92.3));
         students.add(new Student(103, "Charlie", 79.4));
