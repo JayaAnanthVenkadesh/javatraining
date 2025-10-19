@@ -27,7 +27,6 @@ public class StudentListExample {
         for (Student s : students) {
             System.out.println(s);
         }
-
         students.add(new Student(104, "Diana", 85.0));
 
         students.remove(1);
