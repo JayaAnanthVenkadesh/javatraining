@@ -1,17 +1,32 @@
-interface ScoreCalculator {
-    int calculateRuns(int singles, int fours, int sixes);
+class StudentThread extends Thread {
+    private String studentName;
+
+    public StudentThread(String name) {
+        this.studentName = name;
+    }
+
+    @Override
+    public void run() {
+        System.out.println(studentName + " has entered the classroom.");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            System.out.println(studentName + " was interrupted.");
+        }
+        System.out.println(studentName + " has finished studying.");
+    }
 }
 
-public class CricketScoreLambda {
+public class SchoolMultithreading {
     public static void main(String[] args) {
 
-        ScoreCalculator score = (singles, fours, sixes) -> (singles * 1) + (fours * 4) + (sixes * 6);
+        StudentThread s1 = new StudentThread("Alice");
+        StudentThread s2 = new StudentThread("Bob");
+        StudentThread s3 = new StudentThread("Charlie");
 
-        int viratRuns = score.calculateRuns(30, 10, 2);
-        int dhoniRuns = score.calculateRuns(25, 8, 3);
-
-        System.out.println("Virat Kohli scored: " + viratRuns + " runs");
-        System.out.println("MS Dhoni scored: " + dhoniRuns + " runs");
+        s1.start();
+        s2.start();
+        s3.start();
     }
 }
 
